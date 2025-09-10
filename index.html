@@ -1,125 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Engineers' Day 2025 - Pragati Engineering College</title>
-  <meta name="description" content="Engineering Day events and registration" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pragati Engineering College - Engineers' Day 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{--accent:#0ea5a4;--bg:#f7fafc;--card:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
-         margin:0; background:var(--bg); color:#0f172a}
-    .container{max-width:920px;margin:28px auto;padding:20px;text-align:center}
-
-    /* Header with logos */
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
+    html {
+      scroll-behavior: smooth;
     }
-    .logo {
-      width: 90px;
-      height: auto;
-    }
-    .brand-text {
-      flex: 1;
-      text-align: center;
-    }
-    .brand-text h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      font-weight: 800;
-    }
-    .brand-text h2 {
-      margin: 4px 0;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #334155;
-    }
-    .brand-text h3 {
-      margin: 8px 0;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #0f172a;
-    }
-    .brand-text p {
-      font-size: 0.95rem;
-      margin: 4px 0;
-      color: var(--muted);
-    }
-
-    /* Card & Events */
-    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;text-align:left;
-          box-shadow:0 6px 18px rgba(2,6,23,0.06)}
-    .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
-    .btn-primary{background:var(--accent);color:white}
-    .event-heading{text-align:center;margin-top:20px;font-size:1.3rem;font-weight:700;color:#0f172a}
-    .event-item{margin:16px 0;text-align:left}
-    .event-item strong{display:block;font-size:1.1rem;margin-bottom:4px}
   </style>
 </head>
-<body>
-  <div class="container">
-    <header class="header">
-      <!-- Left Logo -->
-      <img src="college-logo.png" alt="College Logo" class="logo">
+<body class="text-gray-800">
 
-      <!-- Center Text -->
-      <div class="brand-text">
-        <h1>Pragati Engineering College</h1>
-        <h2>(Autonomous)</h2>
-        <h3>Engineers' Day Celebration 2025</h3>
-        <p>Date: Monday, 15 September 2025 • Venue: AI Department</p>
+  <!-- Navigation -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center md:justify-between">
+      
+      <!-- Centered Logo + College Name + Logo -->
+      <div class="flex items-center justify-center md:justify-start space-x-4 mb-4 md:mb-0 w-full md:w-auto">
+        <img src="college-logo.png" alt="Pragati College Logo" class="h-12 w-12 object-contain">
+        <h1 class="text-xl md:text-2xl font-bold text-blue-800">Pragati Engineering College</h1>
+        <img src="naac-logo.png" alt="NAAC Logo" class="h-12 w-12 object-contain">
       </div>
 
-      <!-- Right Logo -->
-      <img src="naac-logo.png" alt="NAAC Logo" class="logo">
-    </header>
+      <!-- Navigation Links -->
+      <div class="flex space-x-6 text-sm md:text-base">
+        <a href="#home" class="hover:text-blue-600 font-medium">Home</a>
+        <a href="#events" class="hover:text-blue-600 font-medium">Events</a>
+        <a href="#register" class="hover:text-blue-600 font-medium">Register</a>
+      </div>
 
-    <main>
-      <section class="card" id="details">
-        <h3 style="text-align:center">Welcome to Engineers' Day</h3>
-        <div id="event-matter" style="text-align:left">
-          <p>Join us for an exciting celebration of innovation, creativity, and engineering spirit!
-             Explore events, showcase your talent, and be part of a day filled with challenges and fun.</p>
+    </div>
+  </nav>
 
-          <div class="event-heading">Events</div>
-          <div class="event-item">
-            <strong>Clue Chase 🔍</strong>
-            <p>A crossword-style puzzle where participants solve questions and fill answers into a grid.
-               Test your logic, reasoning, and accuracy to win!</p>
-          </div>
-          <div class="event-item">
-            <strong>Debug Dash 💻</strong>
-            <p>Debug given code, fix the errors, and produce the correct output. Match your output with the
-               provided table to succeed. Speed + accuracy = victory!</p>
-          </div>
-          <div class="event-item">
-            <strong>Art Gallery 🎨</strong>
-            <p>A poster event showcasing robotics in real-life situations through doodle art.
-               Let your imagination meet engineering on canvas!</p>
-          </div>
-          <div class="event-item">
-            <strong>Innovista Project Expo 🚀</strong>
-            <p>A showcase for 3rd-year students to present projects related to DL, ML, or any advanced technology
-               in any programming language. Inspire and innovate!</p>
-          </div>
-          <div class="event-item">
-            <strong>Prompt Engineering 🤖</strong>
-            <p>An AI challenge where you’re given prompts and must generate the most accurate, creative,
-               and meaningful outputs. Unlock the power of AI!</p>
-          </div>
+  <!-- Hero / Header -->
+  <header id="home" class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 text-white py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold">Engineers' Day Celebration 2025</h1>
+      <a href="https://forms.gle/krZJMKB7pWnhMa3j7" target="_blank"
+         class="bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition mt-6 inline-block">
+        Register Now
+      </a>
+      <div id="countdown" class="mt-8 text-2xl font-mono"></div>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="py-16 text-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4">Welcome to Engineers' Day</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">
+        Join us for an exciting celebration of innovation, creativity, and engineering spirit!  
+        Explore events, showcase your talent, and be part of a day filled with challenges and fun.
+      </p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="bg-gradient-to-b from-blue-100 via-white to-blue-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-12">Events</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Clue Chase -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Clue Chase 🔍</h3>
+          <p class="text-gray-600">
+            Clue Chase is an exciting and interactive puzzle-solving event where participants are given a series of questions or hints. 
+            Each question has a correct answer, and the answer must be placed into a grid – similar to a crossword puzzle. 
+            As participants correctly solve each clue, the answers intersect and form a complete puzzle. 
+            This event tests knowledge, problem-solving skills, teamwork, logical reasoning, and speed.
+          </p>
         </div>
 
-        <div style="margin-top:20px;display:flex;justify-content:center">
-          <a id="reg-btn" class="btn btn-primary"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSefnUnTulNaghae8JUEn7GYdUwvevbfHtoAXpqsgYFtN52XlQ/viewform?usp=sharing&ouid=100989149423037548059"
-             target="_blank" rel="noopener noreferrer">Register Now</a>
+        <!-- Debug Dash -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Debug Dash 💻</h3>
+          <p class="text-gray-600">
+            Debug Dash is a thrilling and brain-teasing event where participants are given pieces of code containing intentional bugs. 
+            The objective is to identify and fix these bugs, run the corrected code, and produce the correct output based on given input values. 
+            Participants must match the output’s format to items listed in a reference table and pick the correct corresponding entry.
+          </p>
         </div>
-      </section>
-    </main>
-  </div>
+
+        <!-- Art Gallery -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Art Gallery 🎨</h3>
+          <p class="text-gray-600">
+            Art Gallery is a visually immersive event where participants present a poster that creatively represents futuristic themes. 
+            The theme is “Robotic Life” — how robots interact with humans, assist in daily tasks, explore space, or impact society. 
+            Posters can be designed using doodle art, sketches, or other creative visual styles to bring robotic life to imagination.
+          </p>
+        </div>
+
+        <!-- Project Expo -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Innovista Project Expo 🚀</h3>
+          <p class="text-gray-600">
+            Participants will showcase projects built using Machine Learning, Deep Learning, and other advanced techniques. 
+            These projects demonstrate how AI is applied to solve real-world problems, automate processes, analyze data, or make predictions. 
+            Participants can design models using Python libraries like TensorFlow, PyTorch, Scikit-learn, Keras, or others, 
+            and create interactive displays or demonstrations explaining their projects.
+          </p>
+        </div>
+
+        <!-- Prompt Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
+          <h3 class="text-xl font-bold mb-2 text-blue-800">Prompt Engineering 🤖</h3>
+          <p class="text-gray-600">
+            Prompt Engineering is a challenge where participants craft, test, and refine prompts to achieve accurate and high-quality outputs from AI models. 
+            The goal is to understand how slight changes in phrasing, structure, or context impact results. 
+            Participants experiment with wording and ensure the final output is correct, relevant, and highly accurate.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Co-ordinators Section -->
+  <section class="py-12 bg-gradient-to-r from-blue-50 via-white to-blue-100">
+    <div class="container mx-auto px-4 text-left">
+      <h2 class="text-xl font-semibold mb-2">Faculty Co-ordinators</h2>
+      <p class="text-gray-700">Ramesh</p>
+      <p class="text-gray-700">Phone: 9441159148</p>
+      <p class="text-gray-700 mt-4">Jagadeesh</p>
+      <p class="text-gray-700">Phone: 9985333220</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-4 text-center">
+    <p>&copy; 2025 Pragati Engineering College - Engineers' Day. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Countdown Script -->
+  <script>
+    const eventDate = new Date("Sep 15, 2025 10:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = eventDate - now;
+
+      if (diff <= 0) {
+        countdownEl.innerHTML = "🎉 Event Started!";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+
 </body>
 </html>
