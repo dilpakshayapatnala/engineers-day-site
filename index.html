@@ -16,21 +16,16 @@
   <!-- Navigation -->
   <nav class="bg-white shadow sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center md:justify-between">
-      
-      <!-- Centered Logo + College Name + Logo -->
       <div class="flex items-center justify-center md:justify-start space-x-4 mb-4 md:mb-0 w-full md:w-auto">
         <img src="college-logo.png" alt="Pragati College Logo" class="h-12 w-12 object-contain">
         <h1 class="text-xl md:text-2xl font-bold text-blue-800">Pragati Engineering College</h1>
         <img src="naac-logo.png" alt="NAAC Logo" class="h-12 w-12 object-contain">
       </div>
-
-      <!-- Navigation Links -->
       <div class="flex space-x-6 text-sm md:text-base">
         <a href="#home" class="hover:text-blue-600 font-medium">Home</a>
         <a href="#events" class="hover:text-blue-600 font-medium">Events</a>
         <a href="#register" class="hover:text-blue-600 font-medium">Register</a>
       </div>
-
     </div>
   </nav>
 
@@ -62,8 +57,7 @@
     <div class="container mx-auto px-4">
       <h2 class="text-2xl font-bold text-center mb-12">Events</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Clue Chase -->
+        <!-- Event cards as before -->
         <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
           <h3 class="text-xl font-bold mb-2 text-blue-800">Clue Chase 🔍</h3>
           <p class="text-gray-600">
@@ -73,8 +67,6 @@
             This event tests knowledge, problem-solving skills, teamwork, logical reasoning, and speed.
           </p>
         </div>
-
-        <!-- Debug Dash -->
         <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
           <h3 class="text-xl font-bold mb-2 text-blue-800">Debug Dash 💻</h3>
           <p class="text-gray-600">
@@ -83,8 +75,6 @@
             Participants must match the output’s format to items listed in a reference table and pick the correct corresponding entry.
           </p>
         </div>
-
-        <!-- Art Gallery -->
         <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
           <h3 class="text-xl font-bold mb-2 text-blue-800">Art Gallery 🎨</h3>
           <p class="text-gray-600">
@@ -93,8 +83,6 @@
             Posters can be designed using doodle art, sketches, or other creative visual styles to bring robotic life to imagination.
           </p>
         </div>
-
-        <!-- Project Expo -->
         <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
           <h3 class="text-xl font-bold mb-2 text-blue-800">Innovista Project Expo 🚀</h3>
           <p class="text-gray-600">
@@ -104,8 +92,6 @@
             and create interactive displays or demonstrations explaining their projects.
           </p>
         </div>
-
-        <!-- Prompt Engineering -->
         <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border border-blue-100">
           <h3 class="text-xl font-bold mb-2 text-blue-800">Prompt Engineering 🤖</h3>
           <p class="text-gray-600">
@@ -114,7 +100,6 @@
             Participants experiment with wording and ensure the final output is correct, relevant, and highly accurate.
           </p>
         </div>
-
       </div>
     </div>
   </section>
@@ -123,7 +108,7 @@
   <section class="py-12 bg-gradient-to-r from-blue-50 via-white to-blue-100">
     <div class="container mx-auto px-4 text-left">
       <h2 class="text-xl font-semibold mb-2">Faculty Co-ordinators</h2>
-      <p class="text-gray-700">Ramesh</p>
+      <p class="text-gray-700">S.V.V.Ramesh</p>
       <p class="text-gray-700">Phone: 9441159148</p>
       <p class="text-gray-700 mt-4">Jagadeesh</p>
       <p class="text-gray-700">Phone: 9985333220</p>
@@ -131,29 +116,31 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-4 text-center">
-    <p>&copy; 2025 Pragati Engineering College - Engineers' Day. All Rights Reserved.</p>
+  <footer class="bg-blue-900 text-white py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-center md:text-left">&copy; 2025 Pragati Engineering College - Engineers' Day. All Rights Reserved.</p>
+      <div class="text-center md:text-right mt-4 md:mt-0">
+        <h3 class="font-semibold">Designed by</h3>
+        <p>Balu, Akshaya, Srija</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Countdown Script -->
   <script>
     const eventDate = new Date("Sep 15, 2025 10:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
-
     setInterval(() => {
       const now = new Date().getTime();
       const diff = eventDate - now;
-
       if (diff <= 0) {
         countdownEl.innerHTML = "🎉 Event Started!";
         return;
       }
-
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-
       countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
   </script>
